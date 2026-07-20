@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Software Engineer II",
+    "department": "Technology",
+    "location": "Rochester, NY",
+    "salary": "$95k - $120k",
+    "description": "Build scalable cloud applications using Angular and .NET.",
+    "tags": [
+      ".NET",
+      "Angular",
+      "Azure",
+      "Hybrid"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Mechanical Engineer",
+    "department": "Manufacturing",
+    "location": "Rochester, NY",
+    "salary": "$82k - $105k",
+    "description": "Design production equipment and improve manufacturing processes.",
+    "tags": [
+      "CAD",
+      "SolidWorks",
+      "Full-Time"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Project Manager",
+    "department": "Operations",
+    "location": "Remote",
+    "salary": "$90k - $110k",
+    "description": "Coordinate cross-functional teams and deliver strategic projects.",
+    "tags": [
+      "Agile",
+      "Scrum",
+      "Remote"
+    ]
+  }
+]
