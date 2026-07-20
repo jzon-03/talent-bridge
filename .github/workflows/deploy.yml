@@ -30,6 +30,9 @@ jobs:
       - name: Build Angular app
         run: npm run build -- --configuration production --base-href /
 
+      - name: Add SPA fallback
+        run: cp ./dist/talent-bridge/browser/index.html ./dist/talent-bridge/browser/404.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -39,5 +42,4 @@ jobs:
           path: ./dist/talent-bridge/browser
 
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
