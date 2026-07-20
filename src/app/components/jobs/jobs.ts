@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 export interface Job {
     id: number;
     title: string;
@@ -15,14 +15,13 @@ export interface Job {
   templateUrl: './jobs.html',
   styleUrls: ['./jobs.css'],
 })
-export class Jobs {
-private http = inject(HttpClient);
+export class Jobs implements OnInit {
+  private http = inject(HttpClient);
 
-    jobs: Job[] = [];
+  /** jobs signal populated from the JSON data source */
+  jobs = signal<Job[]>([]);
 
-    ngOnInit(): void {
-        this.http
-            .get<Job[]>('data/jobs.json')
-            .subscribe(data => this.jobs = data);
-    }
+  ngOnInit(): void {
+    this.http.get<Job[]>('data/jobs.json').subscribe(data => this.jobs.set(data));
+  }
 }

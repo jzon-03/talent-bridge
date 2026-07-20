@@ -1,42 +1,51 @@
 [
   {
-    "id": 1,
-    "title": "Software Engineer II",
-    "department": "Technology",
-    "location": "Rochester, NY",
-    "salary": "$95k - $120k",
-    "description": "Build scalable cloud applications using Angular and .NET.",
-    "tags": [
-      ".NET",
-      "Angular",
-      "Azure",
-      "Hybrid"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Mechanical Engineer",
+    "id": 4,
+    "title": "CNC Machinist 1st Shift",
     "department": "Manufacturing",
     "location": "Rochester, NY",
-    "salary": "$82k - $105k",
-    "description": "Design production equipment and improve manufacturing processes.",
+    "salary": "Depends on qualifications and experience",
+    "description": "Set up and operate conventional and CNC machine tools to produce precision parts and verify dimensions to meet print specifications. Machines include lathes, horizontal and vertical mills, multi-axis CNC machining centers, precision internal/external grinders, and CURVIC coupling grinders.",
     "tags": [
-      "CAD",
-      "SolidWorks",
-      "Full-Time"
+      "CNC",
+      "Machinist",
+      "First Shift",
+      "Lathe",
+      "Mill",
+      "Grinding",
+      "CURVIC",
+      "Precision"
     ]
   },
   {
-    "id": 3,
-    "title": "Project Manager",
-    "department": "Operations",
-    "location": "Remote",
-    "salary": "$90k - $110k",
-    "description": "Coordinate cross-functional teams and deliver strategic projects.",
+    "id": 5,
+    "title": "Manufacturing Assistant",
+    "department": "Manufacturing",
+    "location": "Rochester, NY",
+    "salary": "Depends on qualifications and experience",
+    "description": "Machine Operator Assistant’s role is to help keep the department running efficiently by staging work for the machines and by caring for the machine fluids (lubricants and coolant).",
     "tags": [
-      "Agile",
-      "Scrum",
-      "Remote"
+      "Manufacturing",
+      "Assistant",
+      "Assembly",
+      "Quality Control",
+      "Inventory"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Production Planner I",
+    "department": "Manufacturing",
+    "location": "Rochester, NY",
+    "salary": "Depends on qualifications and experience",
+    "description": "The Production Planner I will develop and maintain short, mid and long-term production plans for The Gleason Works in support of a specified business or manufacturing area.  The production plans will support the fulfillment of manufacturing, assembly or sales order demands.  Participate in business projects and initiate process improvement suggestions.",
+    "tags": [
+      "Production",
+      "Planner",
+      "Manufacturing",
+      "Assembly",
+      "Sales",
+      "Process Improvement"
     ]
   }
 ]
