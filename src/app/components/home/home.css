@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    padding: 80px 20px;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+
+    background: linear-gradient(
+        160deg,
+        #2563eb 0%,
+        #2563eb 58%,
+        #1e293b 58%,
+        #1e293b 100%
+    );
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.25);
+    padding: 8px 16px;
+    border-radius: 999px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #dbeafe;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero-buttons {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 16px 34px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .25s;
+}
+
+.primary {
+    background: white;
+    color: #2563eb;
+}
+
+.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0,0,0,.18);
+}
+
+.secondary {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    color: white;
+}
+
+.secondary:hover {
+    background: rgba(255,255,255,.12);
+}
+
+.how-it-works {
+    background: #f8fafc;
+    text-align: center;
+}
+
+.how-it-works h2,
+.benefits h2,
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.step {
+    background: white;
+    border-radius: 14px;
+    padding: 35px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.05);
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    margin: auto;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.step p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.benefits {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.06);
+    transition: .25s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.cta {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+}
+
+.cta p {
+    font-size: 18px;
+    color: #dbeafe;
+    margin-bottom: 35px;
+}
+
+@media (max-width:768px) {
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}
