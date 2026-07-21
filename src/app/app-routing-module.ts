@@ -13,11 +13,9 @@ const routes: Routes = [
       {path:'', redirectTo: 'home', pathMatch: 'full'},
       {path:'home', component: Home},
       {
-        path:'jobs', component: Jobs,
-        children: [
-          {path:':jobPostingId', component: JobDetail}
-        ]
+        path:'jobs', component: Jobs
       },
+      {path:'jobs/:jobPostingId', component: JobDetail},
       {path:'contact', component: Contact},
     ]
   }

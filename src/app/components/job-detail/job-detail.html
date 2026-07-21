@@ -1,16 +1,18 @@
-<main class="job-detail" *if="job()">
-	<h1>{{ job().jobTitle }}</h1>
-
-	<p class="meta">
-		{{ job().postingLocations?.[0]?.cityName }}, {{ job().postingLocations?.[0]?.stateCode }} • Posted: {{ job().postingStartTimestampUTC | date:'mediumDate' }}
-	</p>
-
-	<section class="description" [innerHTML]="safeDescription()"></section>
-
-	<a class="back" routerLink="/jobs">← Back to jobs</a>
-</main>
-
-<main class="job-detail empty" *if="!job()">
-	<p>Job not found.</p>
-	<a routerLink="/jobs">Back to jobs</a>
-</main>
+@if(job()){
+    <main class="job-detail" >
+        <h1>{{ job().jobTitle }}</h1>
+    
+        <p class="meta">
+            {{ job().postingLocations?.[0]?.cityName }}, {{ job().postingLocations?.[0]?.stateCode }} • Posted: {{ job().postingStartTimestampUTC | date:'mediumDate' }}
+        </p>
+    
+        <section class="description" [innerHTML]="safeDescription()"></section>
+    
+        <a class="back" routerLink="/jobs">← Back to jobs</a>
+    </main>
+    
+    <main class="job-detail empty" *ngIf="!job()">
+        <p>Job not found.</p>
+        <a routerLink="/jobs">Back to jobs</a>
+    </main>
+}
