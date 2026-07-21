@@ -8,6 +8,7 @@ import { Home } from './components/home/home';
 import { Contact } from './components/contact/contact';
 import { Jobs } from './components/jobs/jobs';
 import { Root } from './components/root/root';
+import { JobDetail } from './components/job-detail/job-detail';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Root } from './components/root/root';
     Home,
     Contact,
     Jobs,
-    Root
+    Root,
+    JobDetail
   ],
   imports: [
     BrowserModule,

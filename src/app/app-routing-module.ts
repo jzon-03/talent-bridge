@@ -4,6 +4,7 @@ import { Root } from './components/root/root';
 import { Home } from './components/home/home';
 import { Jobs } from './components/jobs/jobs';
 import { Contact } from './components/contact/contact';
+import { JobDetail } from './components/job-detail/job-detail';
 
 const routes: Routes = [
   {
@@ -11,7 +12,12 @@ const routes: Routes = [
     children: [
       {path:'', redirectTo: 'home', pathMatch: 'full'},
       {path:'home', component: Home},
-      {path:'jobs', component: Jobs},
+      {
+        path:'jobs', component: Jobs,
+        children: [
+          {path:':jobPostingId', component: JobDetail}
+        ]
+      },
       {path:'contact', component: Contact},
     ]
   }

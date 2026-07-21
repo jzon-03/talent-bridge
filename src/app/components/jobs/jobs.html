@@ -20,7 +20,7 @@
             </div>
 
             <p class="description">
-                {{ job.description }}
+                {{ job.shortDescription }} <a class="see-more" [routerLink]="['/jobs', job.id]">See more</a>
             </p>
 
             <div class="tags">
@@ -33,9 +33,11 @@
 
             </div>
 
-            <button class="request">
-                Request Referral
-            </button>
+            <div class="actions">
+                <button class="request">
+                    Request Referral
+                </button>
+            </div>
 
         </div>
 
