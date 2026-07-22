@@ -3,6 +3,8 @@
         <h1>{{ job().jobTitle }}</h1>
     
         <p class="meta">
+            <strong>Posting ID:</strong> {{ job().jobPostingId ?? job().jobReqId }}
+            <br />
             {{ job().postingLocations?.[0]?.cityName }}, {{ job().postingLocations?.[0]?.stateCode }} • Posted: {{ job().postingStartTimestampUTC | date:'mediumDate' }}
         </p>
     

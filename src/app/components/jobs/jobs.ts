@@ -8,6 +8,7 @@ export interface Job {
     salary: string;
     description: string;
   shortDescription?: string;
+  jobPostingId?: number;
     tags: string[];
 }
 @Component({
@@ -40,6 +41,7 @@ export class Jobs implements OnInit {
 
         return ({
         id: p.jobPostingId ?? p.jobReqId ?? 0,
+        jobPostingId: p.jobPostingId ?? p.jobReqId ?? 0,
         title: p.jobTitle ?? 'Untitled',
         department: p.clientNamespace ? (p.clientNamespace.charAt(0).toUpperCase() + p.clientNamespace.slice(1)) : '',
         location: (p.postingLocations && p.postingLocations.length)
